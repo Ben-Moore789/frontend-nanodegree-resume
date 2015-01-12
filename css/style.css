@@ -1,7 +1,7 @@
 * {
   padding:0;
   margin:0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .clearfix {
@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #2DB8CD;
   line-height: 48px;
   display: inline;
 }
@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: black;
   line-height: 29px;
   padding: 10px;
 }
@@ -87,16 +87,16 @@ a {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #2DB8CD;
   display: none;
 }
 
-.orange {
-  background-color: #F5AE23;
+.blue {
+  background-color: #2DB8CD;
 }
 
-.orange-text {
-  color: #F5AE23;
+.blue-text {
+  color: #2DB8CD;
 }
 
 .white-text {
@@ -115,8 +115,8 @@ a {
 }
 
 /* TODO: Replace with image later */
-#header {
-  background-color: #484848;
+#header
+{ background-image: url(../images/back.png);
 }
 
 .flex-box {
@@ -212,4 +212,10 @@ span {
   .biopic {
     display: block;
   }
+}
+
+#breaker{
+  height: 10px;
+  width: 100%;
+  background-image: url(../images/breaker.png);
 }

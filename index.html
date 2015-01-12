@@ -13,8 +13,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <title>Resume</title>
 
   <!-- Load the page styles. -->
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
   <link href="css/style.css" rel="stylesheet" type="text/css">
-
+  
   <!--
   jQuery is a common JavaScript library for reading and making changes to the
   Document Object Model (DOM). The DOM is a tree that contains information
@@ -39,10 +40,14 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   Google Map to your resume!
   -->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  
+  <!--link to D3.js library-->
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
   <meta name="viewport" content="width=device-width">
 </head>
 <body><!--unresolved-->
+  <script src="http://d3js.org/d3.v3.min.js"></script>
   <div id="main">
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -54,20 +59,27 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <ul id="topContacts" class='flex-box'></ul>
     </div>
     <div style='clear: both;'></div>
+    <div id="breaker"></div>
+     <!-- This is the timeline, uncomment to show. -->
+    <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0ApGU6_UY8VFpdFdJSkwzZHhFNTlnbl9YekdYZERjRnc&font=PlayfairDisplay-Muli&maptype=toner&lang=en&start_at_end=true&height=550' width='100%' height='550' frameborder='0'></iframe>
+    <div id="breaker"></div>
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
     </div>
+    <div id="breaker"></div>
     <div id="projects">
       <h2>Projects</h2>
     </div>
+    <div id="breaker"></div>
     <div id="education" class='gray'>
       <h2>Education</h2>
     </div>
+    <div id="breaker"></div>
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
     </div>
-    <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
+    <div id="letsConnect" class="dark-gray">
+      <h2 class='center-text blue'>Let's Connect!</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
@@ -125,7 +137,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.backgroundColor='black';
     }
-
   </script>
 </body>
 </html>
