@@ -8,6 +8,9 @@ var HTMLtwitter = '<li class="flex-item"><span class="blue-text">twitter</span><
 var HTMLgithub = '<li class="flex-item"><span class="blue-text">github</span><span class="white-text">%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="blue-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="blue-text">location</span><span class="white-text">%data%</span></li>';
+var HTMLLinkedIn = '<a href="http://www.linkedin.com/pub/ben-moore/93/b31/3b6" id="linkedIn" style="text-decoration:none;">'+
+    '<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" id="linkedIn" width="20" height="15"'+ 
+    'alt="View LinkedIn profile" style="vertical-align:middle;" border="0"></a>'
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLWelcomeMsg = '<span class="welcome-message">%data%</span>';

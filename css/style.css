@@ -148,6 +148,11 @@ ul {
     display: none;
 }
 
+#linkedIn {
+    padding: 0px;
+    margin: 0px;
+}
+
 img {
     padding: 10px;
 }

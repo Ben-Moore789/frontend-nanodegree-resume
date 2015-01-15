@@ -34,7 +34,7 @@ bio.display = function() {
     var e = HTMLgithub.replace("%data%", bio.contacts.github);
     var f = HTMLtwitter.replace("%data%", bio.contacts.twitter);
     var g = HTMLlocation.replace("%data%", bio.contacts.location);
-    $("#topContacts").append(c + d + e + f + g);
+    $("#topContacts").append(c + d + e + f + g + HTMLLinkedIn);
     $("#footerContacts").append(c + d + e + f + g);
     var h = HTMLbioPic.replace("%data%", bio.bioPic);
     var i = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
