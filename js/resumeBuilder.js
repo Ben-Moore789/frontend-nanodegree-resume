@@ -5,24 +5,26 @@ names before I realized it and didn't have a recent copy backed up.  Oops.
 
 var bio = {
     name: "Ben Moore",
-    role: "Web Developer",
+    role: "",
     contacts: {
-        mobile: "205-712-0012",
-        email: "EverSeenaMooseFly@gmail.com",
+        mobile: "(205)712-0012",
+        email: "Ben.Moore789@gmail.com",
         github: "Duke-Gizmo",
         twitter: "@BenMoore789",
         location: "Atlanta, GA"
     },
-    welcomeMessage: "Welcome to my most Awesome resume!",
+    welcomeMessage: "Steadfast, confident professional with an infectious enthusiasm " +
+        "for technology, education and process improvement.",
     skills: {
-        programLanguages: [ "Python", "HTML", "CSS", "JavaScript", "VBA" ],
-        isntruction: [ "Aeronautics", "Aerobatics", "Tactical Operations", 
-            "Emergency Procedures", "Personnel Recovery Operations" ],
-        spokenLanguage: [ "Dari", "French", "Lithuanian" ]
+        programLanguages: [ "Python", "HTML", "CSS", "JavaScript", "Canvas", "VBA",
+                            "Windows and Office Proificient" ],
+        isntruction: [ "Leadership", "Adult Education", "Personnel Management", "Communication", 
+            "Problem Solving", "Detail Oriented", "Budget Planning", "Resource Management", "CPR"]
+        // "Aeronautics", "Aerobatics", "Tactical Operations", 
+            // "Emergency Procedures", "Personnel Recovery Operations" ],
     },
     bioPic: "images/me.jpg",
-    skillsets: [ "Familiar Programming Languages:", 
-        "Experienced Millitary Instructor Pilot:", "Basic Conversational Languages:" ]
+    skillsets: [ "Technical:", "Other:"]
 };
 
 bio.display = function() {
@@ -129,46 +131,56 @@ var work = {
         title: "Primary Pilot Training Instructor Pilot (T-6A)",
         location: "Columbus, MS",
         dates: "Aug 2011 - Jan 2015",
-        description: "Reviewed syllabus requirements, student progress " + 
-            "and weather information. Piloted aircraft and commanded crew. " + 
-            "Ensured optimum training opportunities and progress by conducting " + 
-            "and supervising student training."
+        description: ["• Ensured optimum training opportunities and progress by conducting " +
+            "and supervising student flight and academic instruction including: Aeronautics, " +
+            "Aerobatics, Flight Planning, Emergency Procedures and Energy Management in a " +
+            "dynamic, high speed, 3-dimensional classroom at up to 6 times the force of gravity.",
+            "• Reviewed syllabus requirements and student progress to tailor instruction to " +
+            "specific students in order to meet the rigorous demands of military flight.",
+            "• Created electronic tools in VBA to plan for 150+ flights a day accounting for " +
+            "only 35-45 jets, strict syllabus and aircrew flight limitations on students and " +
+            "pilots flying multiple times in one day.  Tools reduced manpower requirement by 50%."]
     }, {
         employer: "USAF",
         title: "Afghan Air Advisor, Instructor Pilot and Chief of Education (C-208B)",
         location: "Kandahar, Afghanistan",
         dates: "Jan - Dec 2013",
-        description: "Advised Afghan Air Force leadership on managing English " + 
-            "language training program. Mentored and trained Afghan aircrew with " + 
-            "mission planning, air navigation and mobility oeprations."
+        description: ["• Designed and integrated Dari language student record database adopted at " +
+            "defense language schools nationwide.  Accountability bolstered to 100% across country.",
+            "• Authored 1st ever vocational aptitude battery tailored to foreign military with 40% " +
+            "literacy rate.  Set entry requirements and allowed measured and efficient alignment of " +
+            "4,000+ personnel into strength matched occupations and positions.",
+            "• Coached weekly training review panel tracking nearly training 300 events per month and " +
+            "on-the-job training records for over 900 active military personnel.",
+            "• Mentored Afghan pilots in tactical airlift and medical/casualty evacuation in extremely " +
+            "mountainous terrain within enemy surface to air engagement zone."]
     }, {
         employer: "USAF",
         title: "Combat Search and Rescue Instructor Pilot (HC-130P)",
         location: "Valdosta, GA",
         dates: "Jul 2008 - Jul 2011",
-        description: "Piloted special operations aircraft and commanded crews of " + 
-            "special operations forces for worldwide deployment and assignment to " + 
-            "regional unified commands to conduct unconventional warfare, direct action " + 
-            "and special reconnaissance. Managed personnel recovery and counter-terrorism " + 
-            "operations."
+        description: ["• Test pilot for 1st ever HC-130 aircraft simulator and first test platform " +
+            "in 14 years for pararescue operations test squadron researching new employment capabilities.",
+            "• Instructed crews of special operations forces for worldwide deployment to conduct " +
+            "unconventional warfare, personnel recovery and special reconnaissance.",
+            "• Expertly managed 5,000+ training items and special qualifications reducing non-mission " +
+            "ready crews by 50%.  Unit fully mission capable first time in 4 years."]
     }, {
         employer: "USAF",
         title: "Tactical Airlift Pilot (C-130E/H1)",
         location: "Fayetteville, NC",
         dates: "Jul 2005 - Sep 2008",
-        description: "Piloted aircraft and commanded crew to accomplish operational " + 
-            "and training in airlift and airdrop missions. Involved supervision and " + 
-            "planning of mission details and reviewing mission tasking, intelligence " + 
-            "and weather information. Ensured crew and aircraft were properly briefed, " + 
-            "pre-flighted, inspected, loaded, equipped and manned for flight."
+        description: ["• Reviewed mission tasking and intelligence information to plan, command and " +
+            "execute tactical airlift operations in austere locations with a crew of six.",
+            "• Created electronic mission planning tools to support deployed airlift crews in " +
+            "accomplishment of 2,000+ missions with unprecedented 97% success rate."]
     }, {
         employer: "USAF",
         title: "B-52H Maintenance Technician",
         location: "Shreveport, LA",
         dates: "Sept 1999 - Nov 2002",
-        description: "Troubleshot and maintained aircraft structures, systems, components " + 
-            "and support equipment. Tested repaired components using mockups and test equipment. " + 
-            "Adjusted, aligned, rigged and calibrated aircraft systems. "
+        description: ["• Troubleshot and maintained aircraft structures, systems, and components.",
+            "• Tested and repaired components using mockups and test equipment."]
     } ]
 };
 
@@ -179,9 +191,21 @@ work.display = function() {
         var b = HTMLworkTitle.replace("%data%", work.jobs[job].title);
         var c = HTMLworkLocation.replace("%data%", work.jobs[job].location);
         var d = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-        var e = HTMLworkDescription.replace("%data%", work.jobs[job].description);
         $(".work-entry:last").append(a + b);
-        $(".work-entry:last").append(c + d + e);
+        $(".work-entry:last").append(c + d);
+        var j = 0;
+        for (bullet in work.jobs[job].description) {
+            var k = 0;
+            var l = HTMLworkDescription.replace("%data%", work.jobs[job].description[bullet]);
+            // var m = ".skills:eq(" + j + ")";
+            $(".work-entry:last").append(l);
+            // while (k < bio.skills[skillset].length) {
+            //     var n = HTMLskills.replace("%data%", bio.skills[skillset][k]);
+            //     $(m).append(n);
+            //     k += 1;
+            // }
+            j += 1;
+        }
     }
 };
 

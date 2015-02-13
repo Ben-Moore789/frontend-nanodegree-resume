@@ -71,7 +71,7 @@ h2, h3, h4, h5 {
 p {
     font-size: 14px;
     color: #333333;
-    line-height: 21px;
+    line-height: 16px;
 }
 
 a {
@@ -80,6 +80,7 @@ a {
     margin-top: 10px;
     display: block;
 }
+
 
 .welcome-message {
     font-style: italic;
