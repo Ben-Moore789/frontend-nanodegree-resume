@@ -131,7 +131,7 @@ var work = {
         employer: "USAF",
         title: "Primary Pilot Training Instructor Pilot (T-6A)",
         location: "Columbus, MS",
-        dates: "Aug 2011 - Jan 2015",
+        dates: "Jun 2011 - Feb 2015",
         description: ["•    Ensured optimum training opportunities and progress by conducting and "+
             "supervising military flight and academic instruction in a dynamic, complex, high-density "+
             "flying environment during 5 month course per student class.",
@@ -146,7 +146,7 @@ var work = {
         employer: "USAF",
         title: "Afghan Air Advisor, Instructor Pilot and Chief of Education (C-208B)",
         location: "Kandahar, Afghanistan",
-        dates: "Jan - Dec 2013",
+        dates: "Dec 2012 - Dec 2013",
         description: ["•    Mentored, trained and assisted Afghan aircrew with mission planning, "+
             "tactics, techniques and procedures (TTPs) for tactical airlift mobility operations,"+
             " medical/ casualty evacuation and emergency procedures in high threat mountainous terrain.",
@@ -165,7 +165,7 @@ var work = {
         employer: "USAF",
         title: "Combat Search and Rescue Instructor Pilot (HC-130P)",
         location: "Valdosta, GA",
-        dates: "Jul 2008 - Jul 2011",
+        dates: "Mar 2008 - Jan 2011",
         description: ["•    Commanded 10-member crew on $30M aircraft performing worldwide CSAR missions"+
             " in support of contingency/maritime operations using night vision modified contour low-level "+
             "ops, helicopter aerial refueling, personnel & equipment deployments, & infiltration/exfiltration "+
@@ -183,7 +183,7 @@ var work = {
         employer: "USAF",
         title: "Tactical Airlift Pilot (C-130E/H1)",
         location: "Fayetteville, NC",
-        dates: "Jul 2005 - Sep 2008",
+        dates: "Jul 2005 - Oct 2007",
         description: ["• Reviewed mission tasking and intelligence information to plan, command and " +
             "execute tactical airlift operations in austere locations with a crew of six.",
             "• Created electronic mission planning tools to support deployed airlift crews in " +
@@ -192,7 +192,7 @@ var work = {
         employer: "USAF",
         title: "B-52H Maintenance Technician",
         location: "Shreveport, LA",
-        dates: "Sept 1999 - Nov 2002",
+        dates: "May 1999 - Nov 2002",
         description: ["• Troubleshot and maintained aircraft structures, systems, and components.",
             "• Tested and repaired components using mockups and test equipment."]
     } ]
